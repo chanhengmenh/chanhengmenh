@@ -1,6 +1,7 @@
 import { Mail, Phone, Calendar, MapPin } from 'lucide-react'
-import { Github, Linkedin } from 'lucide-react'
+import { Github, Linkedin} from 'lucide-react'
 import { profileData } from '@/lib/portfolio-data'
+import { SiCredly } from "react-icons/si";
 
 interface ProfileSidebarProps {
   data?: typeof profileData
@@ -61,16 +62,6 @@ export function ProfileSidebar({ data = profileData }: ProfileSidebarProps) {
 
         <div className="flex items-start gap-3">
           <div className="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center flex-shrink-0">
-            <Calendar className="w-5 h-5 text-accent" />
-          </div>
-          <div className="flex-1">
-            <p className="text-xs text-muted-foreground uppercase mb-1">Birthday</p>
-            <p className="text-sm text-foreground">{data.birthday}</p>
-          </div>
-        </div>
-
-        <div className="flex items-start gap-3">
-          <div className="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center flex-shrink-0">
             <MapPin className="w-5 h-5 text-accent" />
           </div>
           <div className="flex-1">
@@ -99,6 +90,17 @@ export function ProfileSidebar({ data = profileData }: ProfileSidebarProps) {
           aria-label="LinkedIn"
         >
           <Linkedin className="w-5 h-5" />
+        </a>
+
+        <a          
+          href={data.social.credly}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-10 h-10 rounded-lg bg-secondary hover:bg-accent hover:text-accent-foreground transition-colors flex items-center justify-center"
+          aria-label="Credly"
+        >
+          <SiCredly className="w-5 h-5" />
+
         </a>
       </div>
     </aside>

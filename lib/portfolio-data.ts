@@ -3,11 +3,11 @@ export const profileData = {
   avatar: '/profile.jpg',
   email: 'chanhengmenh@gmail.com',
   phone: '+85570494393',
-  birthday: 'January, 16 2006',
   location: 'Ruessey Keo, Phnom Penh, Cambodia',
   social: {
     github: 'https://github.com/chanhengmenh',
     linkedin: 'https://www.linkedin.com/in/chanheng-menh',
+    credly: 'https://www.credly.com/users/chanheng-menh/edit/badges/credly',
   },
 }
 
@@ -124,6 +124,10 @@ export const skillsData = {
     { name: 'PostgreSQL', icon: '/postgresql.png' },
     { name: 'RESTful API Design' },
   ],
+  analytics: [
+    { name: 'Excel', icon: '/excel.png' },
+    { name: 'Power BI', icon: '/powerbi.png' },
+  ],
   aiMl: [
     { name: 'PyTorch', icon: '/pytorch-dark.png', iconDark: '/pytorch-light.png' },
     { name: 'TensorFlow', icon: '/tensorflow.png' },
@@ -151,7 +155,7 @@ export const skillsData = {
     { name: 'Microservices' },
     { name: 'CI/CD' },
     { name: 'System Design' },
-  ],
+  ]
 }
 
 export const projectsData = [
@@ -177,6 +181,7 @@ export const projectsData = [
       'ML pipeline benchmarking tree-based (Random Forest, Gradient Boosting) and linear (Logistic Regression, Naive Bayes) models with tailored preprocessing per architecture, selected by F1-score on imbalanced data.',
     tags: ['Scikit-learn', 'Pandas', 'Python'],
     githubUrl: 'https://github.com/chanhengmenh/ml-final-spam-email-detection.git',
+    imageUrl: '/spam_detection.png',
   },
   {
     title: 'AUPP Intelligent Chatbot',
@@ -192,6 +197,14 @@ export const projectsData = [
     tags: ['Jenkins', 'GitHub Actions', 'SonarQube', 'Trivy', 'Docker', 'Terraform', 'Prometheus', 'Grafana', 'AWS EC2'],
     githubUrl: 'https://github.com/chanhengmenh/devops-final-project.git',
     imageUrl: '/lms.png',
+  },
+  {
+  title: 'Traffic Accident Analysis',
+  description:
+    'Power BI dashboard analyzing traffic accident data, providing insights into accident trends, causes, and high-risk areas in the United Kingdom over the course of 2021 and 2022. Utilized Power Query for data transformation and DAX for advanced calculations, enabling interactive visualizations and actionable insights for decision-making.',
+  tags: ['Power BI'],
+  githubUrl: 'https://github.com/chanhengmenh/power_bi_projects.git',
+  imageUrl: '/traffic-accident-bi.png',
   },
 ]
 
